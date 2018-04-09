@@ -4,6 +4,9 @@ if(isUserModule.toBoolean()) {
     apply plugin: 'com.android.application'
 }
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
 
 android {
     compileSdkVersion 27
@@ -47,6 +50,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     api project(':Provider')
+    //Dagger2
+    compile "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
 }
 
 apply plugin: 'kotlin-android-extensions'
