@@ -8,5 +8,5 @@ import jmm.baselibrary.persenter.view.BaseView
  * package_name:jmm.usercenter.presenter.view
  */
 interface RegisterView:BaseView{
-    fun onRegisterResult(result:Boolean)
+    fun onRegisterResult(result:String)
 }

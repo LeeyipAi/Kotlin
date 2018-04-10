@@ -8,5 +8,6 @@ package jmm.baselibrary.common
 class BaseConstant {
     companion object {
         val SERVICE_ADDRESS = "http://192.168.1.126:8080/"
+        val TABLE_PREFS = "Kotlin"
     }
 }
